@@ -21,7 +21,8 @@ namespace Cassandra;
 /**
  * Cluster object is used to create Sessions.
  */
-abstract class Type {
+abstract class Type
+{
 
     /**
      * Returns the name of this type as string.
@@ -42,147 +43,189 @@ abstract class Type {
      *
      * @return Type ascii type
      */
-    public static final function ascii() { }
+    public static final function ascii()
+    {
+    }
 
     /**
      * Get representation of bigint type
      *
      * @return Type bigint type
      */
-    public static final function bigint() { }
+    public static final function bigint()
+    {
+    }
 
     /**
      * Get representation of smallint type
      *
      * @return Type smallint type
      */
-    public static final function smallint() { }
+    public static final function smallint()
+    {
+    }
 
     /**
      * Get representation of tinyint type
      *
      * @return Type tinyint type
      */
-    public static final function tinyint() { }
+    public static final function tinyint()
+    {
+    }
 
     /**
      * Get representation of blob type
      *
      * @return Type blob type
      */
-    public static final function blob() { }
+    public static final function blob()
+    {
+    }
 
     /**
      * Get representation of boolean type
      *
      * @return Type boolean type
      */
-    public static final function boolean() { }
+    public static final function boolean()
+    {
+    }
 
     /**
      * Get representation of counter type
      *
      * @return Type counter type
      */
-    public static final function counter() { }
+    public static final function counter()
+    {
+    }
 
     /**
      * Get representation of decimal type
      *
      * @return Type decimal type
      */
-    public static final function decimal() { }
+    public static final function decimal()
+    {
+    }
 
     /**
      * Get representation of double type
      *
      * @return Type double type
      */
-    public static final function double() { }
+    public static final function double()
+    {
+    }
 
     /**
      * Get representation of duration type
      *
      * @return Type duration type
      */
-    public static final function duration() { }
+    public static final function duration()
+    {
+    }
 
     /**
      * Get representation of float type
      *
      * @return Type float type
      */
-    public static final function float() { }
+    public static final function float()
+    {
+    }
 
     /**
      * Get representation of int type
      *
      * @return Type int type
      */
-    public static final function int() { }
+    public static final function int()
+    {
+    }
 
     /**
      * Get representation of text type
      *
      * @return Type text type
      */
-    public static final function text() { }
+    public static final function text()
+    {
+    }
 
     /**
      * Get representation of timestamp type
      *
      * @return Type timestamp type
      */
-    public static final function timestamp() { }
+    public static final function timestamp()
+    {
+    }
 
     /**
      * Get representation of date type
      *
      * @return Type date type
      */
-    public static final function date() { }
+    public static final function date()
+    {
+    }
 
     /**
      * Get representation of time type
      *
      * @return Type time type
      */
-    public static final function time() { }
+    public static final function time()
+    {
+    }
 
     /**
      * Get representation of uuid type
      *
      * @return Type uuid type
      */
-    public static final function uuid() { }
+    public static final function uuid()
+    {
+    }
 
     /**
      * Get representation of varchar type
      *
      * @return Type varchar type
      */
-    public static final function varchar() { }
+    public static final function varchar()
+    {
+    }
 
     /**
      * Get representation of varint type
      *
      * @return Type varint type
      */
-    public static final function varint() { }
+    public static final function varint()
+    {
+    }
 
     /**
      * Get representation of timeuuid type
      *
      * @return Type timeuuid type
      */
-    public static final function timeuuid() { }
+    public static final function timeuuid()
+    {
+    }
 
     /**
      * Get representation of inet type
      *
      * @return Type inet type
      */
-    public static final function inet() { }
+    public static final function inet()
+    {
+    }
 
     /**
      * Initialize a Collection type
@@ -200,7 +243,9 @@ abstract class Type {
      *
      * @return Type The collection type
      */
-    public static final function collection($type) { }
+    public static final function collection($type)
+    {
+    }
 
     /**
      * Initialize a set type
@@ -218,7 +263,9 @@ abstract class Type {
      *
      * @return Type The set type
      */
-    public static final function set($type) { }
+    public static final function set($type)
+    {
+    }
 
     /**
      * Initialize a map type
@@ -237,7 +284,9 @@ abstract class Type {
      *
      * @return Type The map type
      */
-    public static final function map($keyType, $valueType) { }
+    public static final function map($keyType, $valueType)
+    {
+    }
 
     /**
      * Initialize a tuple type
@@ -255,7 +304,9 @@ abstract class Type {
      *
      * @return Type The tuple type
      */
-    public static final function tuple($types) { }
+    public static final function tuple($types)
+    {
+    }
 
     /**
      * Initialize a user type
@@ -273,6 +324,15 @@ abstract class Type {
      *
      * @return Type The user type
      */
-    public static final function userType($types) { }
+    public static final function userType($types)
+    {
+    }
+
+    /**
+     * @param mixed|null $value
+     * @return mixed
+     */
+    public abstract function create(...$value);
+
 
 }

@@ -24,7 +24,8 @@ namespace Cassandra;
  * @see Cluster::connect()
  * @see Cluster::connectAsync()
  */
-interface Session {
+interface Session
+{
 
     /**
      * Execute a query.
@@ -48,7 +49,7 @@ interface Session {
      *
      * @return Rows A collection of rows.
      */
-    public function execute($statement, $options=null);
+    public function execute($statement, $options = null);
 
     /**
      * Execute a query asynchronously. This method returns immediately, but
@@ -61,7 +62,7 @@ interface Session {
      *
      * @see Session::execute() for valid execution options
      */
-    public function executeAsync($statement, $options=null);
+    public function executeAsync($statement, $options = null);
 
     /**
      * Prepare a query for execution.
@@ -75,7 +76,7 @@ interface Session {
      *
      * @see Session::execute() for valid execution options
      */
-    public function prepare($cql, $options=null);
+    public function prepare($cql, $options = null);
 
     /**
      * Asynchronously prepare a query for execution.
@@ -87,18 +88,18 @@ interface Session {
      *
      * @see Session::execute() for valid execution options
      */
-    public function prepareAsync($cql, $options=null);
+    public function prepareAsync($cql, $options = null);
 
     /**
      * Close the session and all its connections.
      *
-     * @param double $timeout The amount of time in seconds to wait for the session to close.
+     * @param double|null $timeout The amount of time in seconds to wait for the session to close.
      *
      * @throws Exception
      *
      * @return null Nothing.
      */
-    public function close($timeout);
+    public function close($timeout = null);
 
     /**
      * Asynchronously close the session and all its connections.
