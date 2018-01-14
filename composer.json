@@ -1,7 +1,7 @@
 {
     "name": "ylin0603/cassandra-stubs",
     "type": "library",
-    "description": "PHP stubs for the php cassandra extension.",
+    "description": "'forked from SachaMorard/cassandra-stubs",
     "license": "MIT",
     "keywords": [
         "cassandra",
