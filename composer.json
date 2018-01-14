@@ -1,5 +1,5 @@
 {
-    "name": "sachoo/cassandra-stubs",
+    "name": "ylin0603/cassandra-stubs",
     "type": "library",
     "description": "PHP stubs for the php cassandra extension.",
     "license": "MIT",

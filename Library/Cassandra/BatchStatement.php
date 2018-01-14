@@ -44,7 +44,7 @@ final class BatchStatement implements Statement {
      *
      * @param int $type must be one of Cassandra::BATCH_* (default: Cassandra::BATCH_LOGGED).
      */
-    public function __construct($type) { }
+    public function __construct($type = \Cassandra::BATCH_LOGGED) { }
 
     /**
      * Adds a statement to this batch.
@@ -56,6 +56,6 @@ final class BatchStatement implements Statement {
      *
      * @return BatchStatement self
      */
-    public function add($statement, $arguments) { }
+    public function add($statement, $arguments = null) { }
 
 }
