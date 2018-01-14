@@ -21,7 +21,8 @@ namespace Cassandra;
 /**
  * Cluster object is used to create Sessions.
  */
-abstract class Type {
+abstract class Type
+{
 
     /**
      * Returns the name of this type as string.
@@ -274,5 +275,12 @@ abstract class Type {
      * @return Type The user type
      */
     public static final function userType($types) { }
+
+    /**
+     * @param mixed|null $value
+     * @return mixed
+     */
+    public abstract function create(...$value);
+
 
 }
