@@ -28,7 +28,7 @@ final class Builder {
     /**
      * Returns a Cluster Instance.
      *
-     * @return Cassandra\Cluster Cluster instance
+     * @return \Cassandra\Cluster Cluster instance
      */
     public function build() { }
 
@@ -69,14 +69,14 @@ final class Builder {
      *
      * @return Builder self
      */
-    public function withContactPoints($host) { }
+    public function withContactPoints($host){ }
 
     /**
      * Specify a different port to be used when connecting to the cluster.
      *
      * @param int $port a number between 1 and 65535
      *
-     * @throws \Exception\InvalidArgumentException
+     * @throws \Cassandra\Exception\InvalidArgumentException
      *
      * @return Builder self
      */
@@ -286,7 +286,7 @@ final class Builder {
     /**
      * Configures the retry policy.
      *
-     * @param Cluster\RetryPolicy $policy the retry policy to use.
+     * @param \Cassandra\RetryPolicy $policy the retry policy to use.
      *
      * @return Builder self
      */
@@ -295,7 +295,7 @@ final class Builder {
     /**
      * Sets the timestamp generator.
      *
-     * @param TimestampGenerator $generator A timestamp generator that will be used
+     * @param \Cassandra\TimestampGenerator $generator A timestamp generator that will be used
      *                                      to generate timestamps for statements.
      *
      * @return Builder self
